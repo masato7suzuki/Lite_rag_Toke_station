@@ -1,0 +1,9 @@
+# 簡易RAGシステム（FAISS + OpenRouter/Deepseek）
+
+## 概要
+このプロジェクトは、CSVファイルからテキストを読み込み、FAISSでベクトル検索を行い、OpenRouterまたはDeepseek API経由で回答を生成する簡易RAG（Retrieval-Augmented Generation）システムです。
+
+## 必要パッケージのインストール
+
+```bash
+pip install -r requirements.txt

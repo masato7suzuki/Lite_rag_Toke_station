@@ -1,0 +1,9 @@
+openai
+requests
+python-dotenv
+faiss-cpu
+tiktoken
+PyPDF2
+unstructured
+sentence-transformers
+langchain
