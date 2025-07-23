@@ -1,0 +1,56 @@
+OpenRouter連携AI問答ツール操作マニュアル（Windows CMD版）
+
+【ファイル構成】
+C:\Users\daito\Desktop\緑区フォルダー
+　├── step3_query_openrouter.py
+
+【使い方】
+
+CMDを開く（または Windowsキー + R → cmd）
+
+フォルダへ移動：
+　cd C:\Users\daito\Desktop\緑区フォルダー
+
+実行：
+　python step3_query_openrouter.py
+
+「質問を入力してください：」と表示されたら質問を入力してEnter
+
+AIが応答を返す
+
+【再質問方法】
+毎回以下のコマンドを繰り返すだけでOK：
+　cd C:\Users\daito\Desktop\緑区フォルダー
+　python step3_query_openrouter.py
+
+【よくあるエラー】
+・「'python' は内部コマンド…」→ Python未インストールまたは環境変数未設定
+・「ModuleNotFoundError: No module named 'openai'」→ pip install openai
+・「Invalid API Key」→ .envファイルまたはコード内のAPIキー確認
+・「応答が来ない」→ 通信不良、APIエラー、制限確認
+
+【ショートカットを作りたい場合】
+
+ask.bat という名前でファイル作成
+
+以下の内容を記述：
+
+@echo off
+cd /d "C:\Users\daito\Desktop\緑区フォルダー"
+python step3_query_openrouter.py
+pause
+
+→ ask.bat をダブルクリックすればすぐ実行できる
+
+【機能追加したいとき】
+・履歴保存
+・Excel出力
+・翻訳切替
+・Deepseek連携切替など
+
+→ そのまま要望を入力すれば対応可能
+
+【まとめ】
+新しく質問 → python step3_query_openrouter.py
+同じ場所で何度も質問 → 上記を繰り返すだけ
+一発起動 → ask.bat 作成
